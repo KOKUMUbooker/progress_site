@@ -83,28 +83,71 @@ body {
   align-items: center;
   margin: 10px;
 }
-.card__content__progress-chart {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  min-height: 30%;
+
+.card .card__content .card__content__name .user__name {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
 }
-.card__content__progress-chart .chart-container {
-  padding: 10px;
+.progress-container {
+  border-radius: 50%;
+  background-color: white;
 }
-.card__content__progress-chart .chart-container .back {
-  stroke: #8d99ae;
-  stroke-width: 10;
+.pie {
+  --p: 20;
+  --b: 22px;
+  --c: darkred;
+  --w: 150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
-.card__content__progress-chart .chart-container .front {
-  stroke: #08415c;
-  stroke-width: 10;
-  stroke-linecap: round;
-  stroke-dasharray: 395.84;
-  transform: rotate(-90deg);
-  transform-origin: center;
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
 }
-.card__content__progress-chart .chart-container .text {
-  font-size: 32px;
-  fill: #063045;
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+.animate {
+  animation: p 1s 0.5s both;
+}
+.no-round:before {
+  background-size: 0 0, auto;
+}
+.no-round:after {
+  content: none;
+}
+@keyframes p {
+  from {
+    --p: 0;
+  }
 }
