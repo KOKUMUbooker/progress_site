@@ -12,3 +12,10 @@ Others
 color: 2277cb; -- neon blue
 color:00d4d3;-- teal
  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+.card__profileimg {
+  height: 400px;
+  object-fit: cover;
+}
