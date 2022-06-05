@@ -1,5 +1,4 @@
 /*navbar*/
-
 header {
     display: flex;
     width: 100%;
@@ -43,8 +42,8 @@ nav ul li a:hover {
 @media(max-width:952px) {
     .toggle {
         display: block;
-        margin-right: 25px;
     }
+
     nav ul {
         width: 100%;
         display: none;
@@ -53,8 +52,9 @@ nav ul li a:hover {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        padding: 7px;
+        padding: 5px;
     }
+
     .active {
         display: block;
     }
