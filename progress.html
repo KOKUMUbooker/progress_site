@@ -11,13 +11,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    /> -->
     <script defer src="app.js"></script>
   </head>
   <body>
     <head></head>
     <main>
-      <section>
-        <div class="container">
+      <div class="row row-light">
+        <div class="col">
           <div class="card" id="card">
             <div class="card__content">
               <div class="card__content__image">
@@ -47,7 +51,100 @@
             </div>
           </div>
         </div>
-      </section>
+
+        <div class="col">
+          <div class="card" id="card">
+            <div class="card__content">
+              <div class="card__content__image">
+                <img src="user.jpg" alt="user" />
+              </div>
+
+              <div class="card__content__name">
+                <span class="user__name">User Name</span>
+                <span class="user__current__module">Javascript</span>
+              </div>
+
+              <div class="card__content__media-icons">
+                <!-- <i class="fab fa-facebook"></i> -->
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <!-- <i class="fab fa-instagram"></i> -->
+                <i class="fab fa-github"></i>
+              </div>
+
+              <div class="progress-container">
+                <div class="pie" style="--p: 23; --c: #2277cb; --b: 10px">
+                  40%
+                  <br />
+                  Progress
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" id="card">
+            <div class="card__content">
+              <div class="card__content__image">
+                <img src="user.jpg" alt="user" />
+              </div>
+
+              <div class="card__content__name">
+                <span class="user__name">User Name</span>
+                <span class="user__current__module">Javascript</span>
+              </div>
+
+              <div class="card__content__media-icons">
+                <!-- <i class="fab fa-facebook"></i> -->
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <!-- <i class="fab fa-instagram"></i> -->
+                <i class="fab fa-github"></i>
+              </div>
+
+              <div class="progress-container">
+                <div class="pie" style="--p: 40; --c: #2277cb; --b: 10px">
+                  40%
+                  <br />
+                  Progress
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" id="card">
+            <div class="card__content">
+              <div class="card__content__image">
+                <img src="user.jpg" alt="user" />
+              </div>
+
+              <div class="card__content__name">
+                <span class="user__name">User Name</span>
+                <span class="user__current__module">Javascript</span>
+              </div>
+
+              <div class="card__content__media-icons">
+                <!-- <i class="fab fa-facebook"></i> -->
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <!-- <i class="fab fa-instagram"></i> -->
+                <i class="fab fa-github"></i>
+              </div>
+
+              <div class="progress-container">
+                <div class="pie" style="--p: 40; --c: #2277cb; --b: 10px">
+                  40%
+                  <br />
+                  Progress
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Modal window -->
       <div id="myModal" class="modal">
@@ -67,5 +164,7 @@
       </div>
     </main>
     <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
