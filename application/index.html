@@ -17,7 +17,7 @@
     <div
       class="container d-flex justify-content-center align-content-center p-5"
     >
-      <div class="card mb-3" style="max-width: 600px">
+      <div class="card mb-3" style="max-width: 800px">
         <div class="row g-0">
           <div class="col-md-6">
             <img
@@ -53,21 +53,18 @@
                 >
                 <div class="input-group">
                   <div class="input-group-text">
-                    <input
-                      class="form-check-input mt-0"
-                      type="radio"
-                      name="level"
-                    /><span class="m-1">High</span>
-                    <input
-                      class="form-check-input mt-0"
-                      type="radio"
-                      name="level"
-                    /><span class="m-1">Average</span>
-                    <input
-                      class="form-check-input mt-0"
-                      type="radio"
-                      name="level"
-                    /><span class="m-1">Low</span>
+                    <input class="mt-0" type="radio" name="level" /><span
+                      class="m-1"
+                      >High</span
+                    >
+                    <input class="mt-0" type="radio" name="level" /><span
+                      class="m-1"
+                      >Average</span
+                    >
+                    <input class="mt-0" type="radio" name="level" /><span
+                      class="m-1"
+                      >Low</span
+                    >
                   </div>
                 </div>
               </div>
@@ -81,6 +78,11 @@
               </div>
               <div class="col-auto">
                 <button type="submit" class="btn submit">Submit</button>
+                <div class="modal-1 hidden">
+                  <button class="close-modal">&times;</button>
+                  <h1 class="lead">THANK YOU FOR YOUR APPLICATION</h1>
+                </div>
+                <div class="overlay hidden"></div>
               </div>
             </div>
           </div>
@@ -93,11 +95,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <script>
-      let lebalSubmit = document.querySelector(".submit");
-      lebalSubmit.addEventListener("click", function () {
-        alert("Your Application is being reviewed");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
